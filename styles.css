@@ -1,0 +1,196 @@
+/* Import Google font - Poppins */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+body {
+  display: flex;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #f0faff;
+}
+
+.button {
+  margin-left: 100px;
+  position: relative;
+  padding: 15px 30px;
+  font-size: 24px;
+  border-radius: 40px;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  background-color: #3498db;
+  transition: all 0.2s ease;
+}
+.button:active {
+  transform: scale(0.96);
+}
+.button:before,
+.button:after {
+  position: absolute;
+  content: "";
+  width: 150%;
+  left: 50%;
+  height: 100%;
+  transform: translateX(-50%);
+  z-index: -1000;
+  background-repeat: no-repeat;
+}
+.button.animate::before {
+  top: -70%;
+  background-image: radial-gradient(circle, #7d2ae8 20%, transparent 20%),
+    radial-gradient(circle, transparent 20%, #7d2ae8 20%, transparent 30%),
+    radial-gradient(circle, #7d2ae8 20%, transparent 20%),
+    radial-gradient(circle, #7d2ae8 20%, transparent 20%),
+    radial-gradient(circle, transparent 10%, #7d2ae8 15%, transparent 20%),
+    radial-gradient(circle, #7d2ae8 20%, transparent 20%),
+    radial-gradient(circle, #7d2ae8 20%, transparent 20%),
+    radial-gradient(circle, #7d2ae8 20%, transparent 20%),
+    radial-gradient(circle, #7d2ae8 20%, transparent 20%);
+  background-size: 10% 10%, 20% 20%, 15% 15%, 20% 20%, 18% 18%, 10% 10%, 15% 15%,
+    10% 10%, 18% 18%;
+  animation: bottomBubbles 0.6s ease-in-out forwards;
+}
+@keyframes bottomBubbles {
+  0% {
+    background-position: 5% 90%, 10% 90%, 10% 90%, 15% 90%, 25% 90%, 25% 90%,
+      40% 90%, 55% 90%, 70% 90%;
+  }
+  50% {
+    background-position: 0% 80%, 0% 20%, 10% 40%, 20% 0%, 30% 30%, 22% 50%,
+      50% 50%, 65% 20%, 90% 30%;
+  }
+  100% {
+    background-position: 0% 70%, 0% 10%, 10% 30%, 20% -10%, 30% 20%, 22% 40%,
+      50% 40%, 65% 10%, 90% 20%;
+    background-size: 0% 0%, 0% 0%, 0% 0%, 0% 0%, 0% 0%, 0% 0%;
+  }
+}
+.button.animate::after {
+  bottom: -70%;
+  background-image: radial-gradient(circle, #7d2ae8 20%, transparent 20%),
+    radial-gradient(circle, #7d2ae8 20%, transparent 20%),
+    radial-gradient(circle, transparent 10%, #7d2ae8 15%, transparent 20%),
+    radial-gradient(circle, #7d2ae8 20%, transparent 20%),
+    radial-gradient(circle, #7d2ae8 20%, transparent 20%),
+    radial-gradient(circle, #7d2ae8 20%, transparent 20%),
+    radial-gradient(circle, #7d2ae8 20%, transparent 20%);
+  background-size: 15% 15%, 20% 20%, 18% 18%, 20% 20%, 15% 15%, 20% 20%, 18% 18%;
+  animation:  bottomBubbles 0.6s ease-in-out forwards;
+}
+@keyframes  bottomBubbles {
+  0% {
+    background-position: 10% -10%, 30% 10%, 55% -10%, 70% -10%, 85% -10%,
+      70% -10%, 70% 0%;
+  }
+  50% {
+    background-position: 0% 80%, 20% 80%, 45% 60%, 60% 100%, 75% 70%, 95% 60%,
+      105% 0%;
+  }
+  100% {
+    background-position: 0% 90%, 20% 90%, 45% 70%, 60% 110%, 75% 80%, 95% 70%,
+      110% 10%;
+    background-size: 0% 0%, 0% 0%, 0% 0%, 0% 0%, 0% 0%, 0% 0%;
+  }
+}
+
+.img-col img{
+ position: absolute;
+ bottom: 10px;
+ left: 2px;
+  width: 25%;
+}
+.img-rol img{
+  position: absolute;
+  top: 10px;
+  right: 5px;
+   width: 25%;
+
+}
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #000000;
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+}
+h1{
+  color: white;
+  position: relative;
+  bottom: 100px;
+  font-size: 100px;  
+}
+.a{                         /*neon effect*/
+  color: #ff7190;
+  text-shadow: 
+  0 0 7px #ff255f,
+  0 0 10px #ff255f
+}
+
+  h2{
+    color: white;
+    position: relative;
+    bottom: 250px;
+    left: 100px;
+    font-size: 100px;  
+
+}
+.b{                         /*neon effect*/
+  color: #ff7190;
+  text-shadow: 
+  0 0 7px #ff255f,
+  0 0 10px #ff255f
+}
+.container {
+    text-align: center;
+    
+}
+
+#escapeButton {
+     margin-right: 100px;
+     margin-top: 80px;
+    padding: 15px 30px;
+    position: relative;
+    font-size: 24px;
+    background-color: #e23e7a;
+    color: white;
+    border: none;
+    border-radius: 40px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#escapeButton:hover {
+    background-color: #55a7df;
+}
+video{
+  
+    position: absolute;
+    z-index: -1;
+    top: 5px;
+    left: -10%;
+    width: 120%;
+    height: 100vh;
+}
+audio{
+  position: absolute;
+    top: 5px;
+    left: 40%;
+    height: 100vh;
+}
+ @media only screen and (max-width:400px){
+  .card{
+    width: 90%;
+    height: 90%;
+  }
+
+}

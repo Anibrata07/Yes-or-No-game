@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yes or NO</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Matemasie&display=swap" rel="stylesheet">
+<style>
+    h1.a {
+        font-family: "Matemasie", sans-serif;
+    }
+</style>
+</head>
+<body>
+    <div class="img-col">
+        <img src="img2.png">
+    </div>
+    <div class="img-rol">
+        <img src="img1.png">
+    </div>
+    <div class="container">
+        <h1 class="a">You Like me?</h1>
+        <button id="escapeButton">Yes🥰</button>
+        <form action="no.html">
+        <button  class="button">No😏</button>
+    </form>
+    </div>
+    <script>
+         const button = document.querySelector("escapeButton");
+         
+      button.addEventListener("click", (e) => {
+        e.preventDefault;
+        button.classList.add("animate");
+
+        setTimeout(() => {
+          button.classList.remove("animate");
+        }, 600);
+    });
+    </script>
+    <script script src="script.js">
+    </script>
+</body>
+</html>
